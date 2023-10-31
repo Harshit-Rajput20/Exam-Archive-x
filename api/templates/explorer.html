@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="includedContent"></div>
+    <div id="includedContent"></div>
+
+
+ 
+    <script>
+        // Define your data
+        var variable1 = "Value1";
+        var variable2 = "Value2";
+    
+        // Load and include the content from "folder.html" using JavaScript
+        fetch("folder.html")
+            .then(response => response.text())
+            .then(content => {
+                // Replace variables in the content
+                content = content.replace("{{FolderName}}", variable1);
+                content = content.replace("{{variable2}}", variable2);
+    
+                // Insert the modified content into the container
+                var includedContent = document.getElementById("includedContent");
+                includedContent.innerHTML += content;
+            })
+            .catch(error => {
+                console.error("Error loading content: " + error);
+            });
+    </script>
+    
+
+
+
+</body>
+</html>

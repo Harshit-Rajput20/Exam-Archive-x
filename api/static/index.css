@@ -369,3 +369,44 @@ nav .navbar .links li .sub-menu li{
  
     
 }
+
+ 
+
+.scroll{
+  border: 2px solid #ccc;
+  position: relative;
+    left: 50%;
+    top: 125%;
+    transform: translate(-50%, -50%);
+    width: 2%;
+    height: 10%;
+    border-radius: 20px;
+}
+
+.circle{
+  position: relative;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 65%;
+  height: 35%;
+  border-radius: 50px;
+  border: 2px solid #ccc;
+}
+
+
+.scroll-heading{
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  transform: translate(-50%, -50%);
+  color: #ccc;
+}
+
+
+.container2
+{
+  position: absolute;
+  top: 110%;
+}
